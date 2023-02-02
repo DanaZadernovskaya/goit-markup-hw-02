@@ -1,0 +1,138 @@
+body {
+  background-color: #e5e5e5;
+}
+/*header*/
+
+.design-logo {
+  width: 44px;
+  height: 24px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 76px 24px 156px;
+  text-decoration: none;
+}
+.desing-logo-part {
+  width: 71px;
+  height: 24px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #2e2f42;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+/*navigation*/
+.links {
+  text-decoration-line: none;
+}
+.main-nav-buttons {
+  display: flex;
+  width: 48px;
+  height: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  list-style-type: none;
+}
+.nav-line {
+  padding: 0 40px;
+}
+nav {
+  align-items: center;
+  display: flex;
+}
+/*contacts*/
+.contacts {
+  position: absolute;
+  top: 8px;
+  height: 24px;
+  right: 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #434455;
+  /*COLOUR!!!*/
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+  margin: 24px 0;
+}
+.mail {
+  padding-right: 40px;
+}
+.tel {
+  padding-right: 156px;
+}
+/*section*/
+.section1 {
+  background-color: #2e2f42;
+  position: absolute;
+  width: 1440px;
+  height: 600px;
+  left: 0px;
+  top: 72px;
+  text-align: center;
+}
+h1 {
+  position: absolute;
+  width: 507px;
+  height: 120px;
+  left: 473px;
+  top: 188px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin: 0 auto 48px;
+}
+.order-button {
+  width: 105px;
+  height: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: row;
+  padding: 16px 32px;
+  gap: 10px;
+  position: absolute;
+  width: 169px;
+  height: 56px;
+  left: 636px;
+  top: 356px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
