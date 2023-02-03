@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
@@ -23,84 +23,96 @@
     <nav>
       <a class="design-logo" href="./index.html">Web<span class="desing-logo-part">Studio</span></a>
       <ul class="main-nav-buttons">
-        <li><a class="links" href="">Studio</a></li>
-        <li class="nav-line"><a class="links" href="">Portfolio</a></li>
-        <li><a class="links" href="">Contacts</a></li>
+        <li><a class="links" href="./studio.html">Studio</a></li>
+        <li class="portfolio">
+          <a class="links" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li><a class="links" href="./contacts.html">Contacts</a></li>
       </ul>
     </nav>
     <!-- Contacts -->
     <address>
       <ul class="contacts">
-        <li class="mail"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="tel"><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        <li class="mail">
+          <a class="links" href=" mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="tel">
+          <a class="links" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
       </ul>
     </address>
   </header>
   <!-- top buttons main  -->
   <main>
-    <nav>
-      <ul>
-        <li> <button type="button">All</button></li>
-        <li> <button type="button">Web Site</button></li>
-        <li> <button type="button">App</button></li>
-        <li> <button type="button">Design</button></li>
-        <li> <button type="button">Marketing</button></li>
-      </ul>
-    </nav>
+    <h2 class="hidden-title">Options panel</h2>
+    <ul class="panel-buttons">
+      <li><button class="optins-button" type="button">All</button></li>
+      <li><button class="optins-button" type="button">Web Site</button></li>
+      <li><button class="optins-button" type="button">App</button></li>
+      <li><button class="optins-button" type="button">Design</button></li>
+      <li><button class="optins-button" type="button">Marketing</button></li>
+    </ul>
     <!-- Work Examples  -->
     <section>
-      <ul>
-        <li><img src="./images-hw2/apps.jpg" alt="Banking App Interface Concept" width="360">
+      <h2 class="hidden-title">Work Examples</h2>
+      <ul class="work-examples">
+        <li>
+          <img src="./images/apps.jpg" alt="Banking App Interface Concept" width="360" />
           <h3>Banking App Interface Concept</h3>
           <p>App</p>
         </li>
         <li>
-          <img src="./images-hw2/marketing.jpg" alt="Cashless Payment" width="360">
+          <img src="./images/marketing.jpg" alt="Cashless Payment" width="360" />
           <h3>Cashless Payment</h3>
           <p>Marketing</p>
         </li>
         <li>
-          <img src="./images-hw2/meditation.jpg" alt="Meditaion App" width="360">
+          <img src="./images/meditation.jpg" alt="Meditation App" width="360" />
           <h3>Meditaion App</h3>
           <p>App</p>
         </li>
         <li>
-          <img src="./images-hw2/taxiservice.jpg" alt="Taxi Service" width="360">
+          <img src="./images/taxiservice.jpg" alt="Taxi Service" width="360" />
           <h3>Taxi Service</h3>
           <p>Marketing</p>
         </li>
         <li>
-          <img src="./images-hw2/screenil.jpg" alt="Screen Illustrations" width="360">
+          <img src="./images/screenil.jpg" alt="Screen Illustrations" width="360" />
           <h3>Screen Illustrations</h3>
           <p>Design</p>
         </li>
         <li>
-          <img src="./images-hw2/onlinecourses.jpg" alt="Online Courses" width="360">
+          <img src="./images/onlinecourses.jpg" alt="Online Courses" width="360" />
           <h3>Online Courses</h3>
           <p>Marketing</p>
         </li>
         <li>
-          <img src="./images-hw2/instagram.jpg" alt="Instagram Stories Concept" width="360">
+          <img src="./images/instagram.jpg" alt="Instagram Stories Concept" width="360" />
           <h3>Instagram Stories Concept</h3>
           <p>Design</p>
         </li>
         <li>
-          <img src="./images-hw2/organicfood.jpg" alt="Organic Food" width="360">
+          <img src="./images/organicfood.jpg" alt="Organic Food" width="360" />
           <h3>Organic Food</h3>
           <p>Web Site</p>
         </li>
         <li>
-          <img src="./images-hw2/freshcoffee.jpg" alt="Fresh Coffee" width="360">
+          <img src="./images/freshcoffee.jpg" alt="Fresh Coffee" width="360" />
           <h3>Fresh Coffee</h3>
           <p>Web Site</p>
         </li>
       </ul>
     </section>
   </main>
-  <section>
-    <a href="./index.html">WebStudio</a>
-    <p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-  </section>
+
+  <footer>
+    <a class="design-logo" href="./index.html">Web<span class="desing-logo-part2">Studio</span></a>
+    <p class="footer-goal">
+      Increase the flow of customers and sales for your business with digital
+      marketing & growth solutions.
+    </p>
+  </footer>
 </body>
+
 
 </html>

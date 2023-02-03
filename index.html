@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
@@ -23,16 +23,22 @@
     <nav>
       <a class="design-logo" href="./index.html">Web<span class="desing-logo-part">Studio</span></a>
       <ul class="main-nav-buttons">
-        <li><a class="links" href="">Studio</a></li>
-        <li class="nav-line"><a class="links" href="">Portfolio</a></li>
-        <li><a class="links" href="">Contacts</a></li>
+        <li><a class="links" href="./studio.html">Studio</a></li>
+        <li class="portfolio">
+          <a class="links" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li><a class="links" href="./contacts.html">Contacts</a></li>
       </ul>
     </nav>
     <!-- Contacts -->
     <address>
       <ul class="contacts">
-        <li class="mail"><a class="links" href=" mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="tel"><a class="links" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        <li class="mail">
+          <a class="links" href=" mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="tel">
+          <a class="links" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
       </ul>
     </address>
   </header>
@@ -45,32 +51,32 @@
     </section>
     <!--section2-->
     <section>
-      <h2 class="adv-title">Our Advantages</h2>
+      <h2 class="hidden-title">Our Advantages</h2>
       <ul class="adv-list">
         <li>
-          <h3>Strategy</h3>
-          <p>
+          <h3 class="adv-headings">Strategy</h3>
+          <p class="avd-inf">
             Our goal is to identify the business problem to walk away with the
             perfect and creative solution.
           </p>
         </li>
         <li>
-          <h3>Punctuality</h3>
-          <p>
+          <h3 class="adv-headings">Punctuality</h3>
+          <p class="avd-inf">
             Bring the key message to the brand's audience for the best price
             within the shortest possible time.
           </p>
         </li>
         <li>
-          <h3>Diligence</h3>
-          <p>
+          <h3 class="adv-headings">Diligence</h3>
+          <p class="avd-inf">
             Research and confirm brands that present the strongest digital
             growth opportunities and minimize risk.
           </p>
         </li>
         <li>
-          <h3>Technologies</h3>
-          <p>
+          <h3 class="adv-headings">Technologies</h3>
+          <p class="avd-inf">
             Design practice focused on digital experiences. We bring forth a
             deep passion for problem-solving.
           </p>
@@ -80,24 +86,24 @@
     <!--Services-->
     <!--section3-->
     <section>
-      <h2>What are we doing</h2>
-      <ul>
-        <li>
+      <h2 class="options-title">What are we doing</h2>
+      <ul class="options-list">
+        <li class="options-img">
           <img src="./images/scrn.jpg" alt="apps" width="360" />
         </li>
-        <li>
+        <li class="options-img">
           <img src="./images/phone.jpg" alt="websites" width="360" />
         </li>
-        <li>
+        <li class="options-img">
           <img src="./images/phonescrn.jpg" alt="social media" width="360" />
         </li>
       </ul>
     </section>
     <!--Our team-->
     <!--section4-->
-    <section>
-      <h2>Our Team</h2>
-      <ul>
+    <section id="our-team">
+      <h2 class="team-title">Our Team</h2>
+      <ul class="team-list">
         <li>
           <img src="./images/teammemb2.jpg" alt="Mark Guerrero" width="264" />
           <h3>Mark Guerrero</h3>
@@ -123,8 +129,8 @@
   </main>
   <!--Footer-->
   <footer>
-    <a href="./index.html">WebStudio</a>
-    <p>
+    <a class="design-logo" href="./index.html">Web<span class="desing-logo-part2">Studio</span></a>
+    <p class="footer-goal">
       Increase the flow of customers and sales for your business with digital
       marketing & growth solutions.
     </p>
