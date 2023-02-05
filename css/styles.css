@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
 
+:root {
+  --primary-brand: #4d5ae5;
+  --dark: #2e2f42;
+  --light: #f4f4fd;
+  --text: #434455;
+  --accent: #e7e9fc;
+  --pressed-state: #404bbf;
+}
 body {
   background-color: white;
   margin: 0;
+  font-family: "Roboto";
 }
 /*header*/
 
@@ -26,7 +35,7 @@ nav {
 
 .design-logo {
   font-family: "Raleway";
-  font-style: normal;
+
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 800;
@@ -35,54 +44,40 @@ nav {
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
-  color: #4d5ae5;
+  color: var(--primary-brand);
 }
 
 .desing-logo-part {
-  font-family: "Raleway";
-  font-style: normal;
-  text-transform: uppercase;
   text-decoration: none;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
   display: flex;
   align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #2e2f42;
+  color: var(--dark);
 }
 .desing-logo-part2 {
-  font-family: "Raleway";
-  font-style: normal;
-  text-transform: uppercase;
   text-decoration: none;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
   display: flex;
   align-items: center;
-  letter-spacing: 0.03em;
-  color: #f4f4fd;
+  color: var(--light);
 }
 .main-nav-buttons {
   display: flex;
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.02em;
-
   list-style-type: none;
+  cursor: pointer;
 }
 
 .main-nav-buttons .portfolio {
   margin: 0 40px;
 }
 .main-nav-buttons .links {
-  color: #2e2f42;
+  color: var(--dark);
 }
-
+.main-nav-buttons .links:active {
+  color: var(--pressed-state);
+}
 main {
   margin-top: 72px;
 }
@@ -93,9 +88,6 @@ main {
 
 /*contacts*/
 .contacts {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.02em;
   align-items: center;
@@ -109,12 +101,16 @@ main {
   margin-right: 40px;
 }
 .contacts a {
-  color: #434455;
+  font-style: normal;
+  color: var(--text);
+}
+.contacts a:active {
+  color: var(--pressed-state);
 }
 /*section*/
 .section1 {
   display: flex;
-  background-color: #2e2f42;
+  background-color: var(--dark);
   width: 100%;
   height: 600px;
   align-items: center;
@@ -124,72 +120,73 @@ main {
 
 h1 {
   width: 507px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: white;
   margin-bottom: 48px;
 }
 .order-button {
   width: 159px;
   height: 56px;
   font-family: "Roboto";
-  font-style: normal;
+
   font-weight: 500;
   font-size: 16px;
   display: flex;
-  background: #4d5ae5;
+  background: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: white;
   padding: 0;
   border: 0;
 }
-.hidden-title {
-  visibility: hidden;
-  height: 0;
+.order-button:hover {
+  background-color: var(--pressed-state);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .adv-list {
   align-items: center;
   display: flex;
   list-style-type: none;
-  font-family: "Roboto";
-  font-style: normal;
   height: 156px;
   margin: 120px 156px;
   padding: 0;
 }
 h2 {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--dark);
 }
 .adv-list li {
   margin: 0 12px;
 }
-.adv-headings {
-  width: 264px;
-  height: 24px;
-}
+
 .avd-inf {
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text);
   padding: 0px;
 }
 /*Services*/
@@ -211,12 +208,12 @@ h2 {
   margin: 0 12px;
   box-sizing: border-box;
   background-blend-mode: soft-light, normal;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--accent);
 }
 /*Our team*/
 /*section4*/
 #our-team {
-  background-color: #f4f4fd;
+  background-color: var(--light);
   padding: 120px 0;
 }
 .team-title {
@@ -233,27 +230,35 @@ h2 {
 .team-list li {
   text-align: center;
   margin: 0 12px;
-  background: #ffffff;
+  background: white;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+}
+.team-list h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--dark);
+}
+.team-list p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text);
 }
 /*footer*/
 footer {
   width: 100%;
   height: 310px;
-  background: #2e2f42;
+  background: var(--dark);
 }
 .footer-goal {
   width: 264px;
   margin-left: 156px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #e7e9fc;
+  color: var(--accent);
 }
 footer a {
   padding: 100px 0 0 156px;
@@ -272,12 +277,12 @@ footer a {
 .optins-button {
   padding: 12px 24px;
   height: 48px;
-  background: #f4f4fd;
-  border: 1px solid #e7e9fc;
+  background: var(--light);
+  border: 1px solid var(--accent);
   border-radius: 4px;
   /*text button*/
   font-family: "Roboto";
-  font-style: normal;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -285,10 +290,10 @@ footer a {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
+  color: var(--primary-brand);
 }
 .optins-button:hover {
-  background-color: #404bbf;
+  background-color: var(--pressed-state);
   color: white;
   cursor: pointer;
 }
@@ -307,27 +312,22 @@ footer a {
   height: 420px;
   margin: 0 12px;
   box-sizing: border-box;
-  background: #ffffff;
-  border: 1px solid #e7e9fc;
+  background: white;
+  border: 1px solid var(--accent);
   margin-bottom: 48px;
 }
 .work-examples h3 {
   margin: 32px 0 8px 16px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark);
 }
 .work-examples p {
   margin: 0 0 32px 16px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text);
 }
